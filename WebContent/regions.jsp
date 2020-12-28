@@ -11,67 +11,11 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->
 <link rel="stylesheet" href="css/font-awesome.min.css" /><!-- fontawesome-CSS -->
 <link rel="stylesheet" href="css/menu_sideslide.css" type="text/css" media="all"><!-- Navigation-CSS -->
-<!-- meta tags -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //meta tags -->
 <!--fonts-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!--//fonts-->	
-<!-- js -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- js -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap-select.js"></script>
-<script>
-  $(document).ready(function () {
-    var mySelect = $('#first-disabled2');
 
-    $('#special').on('click', function () {
-      mySelect.find('option:selected').prop('disabled', true);
-      mySelect.selectpicker('refresh');
-    });
-
-    $('#special2').on('click', function () {
-      mySelect.find('option:disabled').prop('disabled', false);
-      mySelect.selectpicker('refresh');
-    });
-
-    $('#basic2').selectpicker({
-      liveSearch: true,
-      maxOptions: 1
-    });
-  });
-</script>
-<!-- language-select -->
-<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-<link href="css/jquery.uls.css" rel="stylesheet"/>
-<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
-<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
-<!-- Source -->
-<script src="js/jquery.uls.data.js"></script>
-<script src="js/jquery.uls.data.utils.js"></script>
-<script src="js/jquery.uls.lcd.js"></script>
-<script src="js/jquery.uls.languagefilter.js"></script>
-<script src="js/jquery.uls.regionfilter.js"></script>
-<script src="js/jquery.uls.core.js"></script>
-<script>
-			$( document ).ready( function() {
-				$( '.uls-trigger' ).uls( {
-					onSelect : function( language ) {
-						var languageName = $.uls.data.getAutonym( language );
-						$( '.uls-trigger' ).text( languageName );
-					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
-				} );
-			} );
-		</script>
-<!-- //language-select -->
 </head>
 <body>
 
@@ -81,23 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h2 class="w3-head">Location List</h2>
 		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Alabama </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html"> Birmingham </a></li>
-						<li><a href="all-classifieds.html"> Montgomery </a></li>
-						<li><a href="all-classifieds.html"> Mobile </a></li>
-						<li><a href="all-classifieds.html"> Huntsville </a></li>
-						<li><a href="all-classifieds.html"> Tuscaloosa </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+		
 		<div class="region-block">
 			<div class="container">
 				<div class="state col-md-3">
@@ -132,23 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Arkansas </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Little Rock  </a></li>
-						<li><a href="all-classifieds.html">Fort Smith    </a></li>
-						<li><a href="all-classifieds.html">Fayetteville   </a></li>
-						<li><a href="all-classifieds.html">Springdale    </a></li>
-						<li><a href="all-classifieds.html">Jonesboro   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+		
 		<div class="region-block">
 			<div class="container">
 				<div class="state col-md-3">
@@ -183,23 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Connecticut </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Bridgeport </a></li>
-						<li><a href="all-classifieds.html">New Haven  </a></li>
-						<li><a href="all-classifieds.html">Hartford  </a></li>
-						<li><a href="all-classifieds.html">Stamford </a></li>
-						<li><a href="all-classifieds.html">Waterbury   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+	
 		<div class="region-block">
 			<div class="container">
 				<div class="state col-md-3">
@@ -217,74 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Florida </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Jacksonville  </a></li>
-						<li><a href="all-classifieds.html">Miami  </a></li>
-						<li><a href="all-classifieds.html">Tampa  </a></li>
-						<li><a href="all-classifieds.html">St. Petersburg   </a></li>
-						<li><a href="all-classifieds.html">Orlando  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Georgia </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Atlanta </a></li>
-						<li><a href="all-classifieds.html">Augusta </a></li>
-						<li><a href="all-classifieds.html">Columbus</a></li>
-						<li><a href="all-classifieds.html">Savannah  </a></li>
-						<li><a href="all-classifieds.html">Athens   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Hawaii </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Honolulu  </a></li>
-						<li><a href="all-classifieds.html">Pearl City </a></li>
-						<li><a href="all-classifieds.html">Hilo </a></li>
-						<li><a href="all-classifieds.html">Kailua   </a></li>
-						<li><a href="all-classifieds.html">Waipahu </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Idaho  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Boise</a></li>
-						<li><a href="all-classifieds.html">Nampa  </a></li>
-						<li><a href="all-classifieds.html">Meridian </a></li>
-						<li><a href="all-classifieds.html">Idaho Falls </a></li>
-						<li><a href="all-classifieds.html">Pocatello  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+		
 		<div class="region-block">
 			<div class="container">
 				<div class="state col-md-3">
@@ -324,154 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="state col-md-3">
 					<h3>Iowa  </h3>
 				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Des Moines </a></li>
-						<li><a href="all-classifieds.html">Cedar Rapids </a></li>
-						<li><a href="all-classifieds.html">Davenport </a></li>
-						<li><a href="all-classifieds.html">Sioux City  </a></li>
-						<li><a href="all-classifieds.html">Waterloo </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Kansas </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Wichita   </a></li>
-						<li><a href="all-classifieds.html">Overland Park  </a></li>
-						<li><a href="all-classifieds.html">Kansas City  </a></li>
-						<li><a href="all-classifieds.html">Topeka  </a></li>
-						<li><a href="all-classifieds.html">Olathe  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Kentucky </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Louisville  </a></li>
-						<li><a href="all-classifieds.html">Lexington  </a></li>
-						<li><a href="all-classifieds.html">Bowling Green </a></li>
-						<li><a href="all-classifieds.html">Owensboro </a></li>
-						<li><a href="all-classifieds.html">Covington   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Louisiana </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">New Orleans </a></li>
-						<li><a href="all-classifieds.html">Baton Rouge    </a></li>
-						<li><a href="all-classifieds.html">Shreveport    </a></li>
-						<li><a href="all-classifieds.html">Metairie   </a></li>
-						<li><a href="all-classifieds.html">Lafayette   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Maine </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Portland</a></li>
-						<li><a href="all-classifieds.html">Lewiston </a></li>
-						<li><a href="all-classifieds.html">Bangor </a></li>
-						<li><a href="all-classifieds.html">South Portland</a></li>
-						<li><a href="all-classifieds.html">Auburn </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Maryland </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Baltimore </a></li>
-						<li><a href="all-classifieds.html">Frederick    </a></li>
-						<li><a href="all-classifieds.html">Rockville    </a></li>
-						<li><a href="all-classifieds.html">Gaithersburg    </a></li>
-						<li><a href="all-classifieds.html">Bowie     </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Massachusetts </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Boston   </a></li>
-						<li><a href="all-classifieds.html">Worcester    </a></li>
-						<li><a href="all-classifieds.html">Springfield   </a></li>
-						<li><a href="all-classifieds.html">Lowell    </a></li>
-						<li><a href="all-classifieds.html">Cambridge    </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Michigan </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Detroit </a></li>
-						<li><a href="all-classifieds.html">Grand Rapids </a></li>
-						<li><a href="all-classifieds.html">Warren  </a></li>
-						<li><a href="all-classifieds.html">Sterling Heights </a></li>
-						<li><a href="all-classifieds.html">Lansing  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Minnesota  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Minneapolis  </a></li>
-						<li><a href="all-classifieds.html">St. Paul   </a></li>
-						<li><a href="all-classifieds.html">Rochester   </a></li>
-						<li><a href="all-classifieds.html">Duluth   </a></li>
-						<li><a href="all-classifieds.html">Bloomington   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+				
 		<div class="region-block">
 			<div class="container">
 				<div class="state col-md-3">
@@ -518,74 +200,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="all-classifieds.html">Great Falls </a></li>
 						<li><a href="all-classifieds.html">Bozeman  </a></li>
 						<li><a href="all-classifieds.html">Butte-Silver Bow</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Nebraska </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Omaha  </a></li>
-						<li><a href="all-classifieds.html">Lincoln   </a></li>
-						<li><a href="all-classifieds.html">Bellevue   </a></li>
-						<li><a href="all-classifieds.html">Grand Island   </a></li>
-						<li><a href="all-classifieds.html">Kearney   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Nevada </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Las Vegas  </a></li>
-						<li><a href="all-classifieds.html">Henderson </a></li>
-						<li><a href="all-classifieds.html">North Las Vegas  </a></li>
-						<li><a href="all-classifieds.html">Reno   </a></li>
-						<li><a href="all-classifieds.html">Sunrise Manor </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>New Hampshire </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Manchester   </a></li>
-						<li><a href="all-classifieds.html">Nashua    </a></li>
-						<li><a href="all-classifieds.html">Concord    </a></li>
-						<li><a href="all-classifieds.html">Dover    </a></li>
-						<li><a href="all-classifieds.html">Rochester    </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>New Jersey </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Newark  </a></li>
-						<li><a href="all-classifieds.html">Jersey City      </a></li>
-						<li><a href="all-classifieds.html">Paterson      </a></li>
-						<li><a href="all-classifieds.html">Elizabeth   </a></li>
-						<li><a href="all-classifieds.html">Edison      </a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
@@ -642,108 +256,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>North Dakota  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Fargo  </a></li>
-						<li><a href="all-classifieds.html">Bismarck   </a></li>
-						<li><a href="all-classifieds.html">Grand Forks   </a></li>
-						<li><a href="all-classifieds.html">Minot   </a></li>
-						<li><a href="all-classifieds.html">West Fargo  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Ohio  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Columbus  </a></li>
-						<li><a href="all-classifieds.html">Cleveland  </a></li>
-						<li><a href="all-classifieds.html">Cincinnati  </a></li>
-						<li><a href="all-classifieds.html">Toledo   </a></li>
-						<li><a href="all-classifieds.html">Akron   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Oklahoma  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Oklahoma City </a></li>
-						<li><a href="all-classifieds.html">Tulsa </a></li>
-						<li><a href="all-classifieds.html">Norman  </a></li>
-						<li><a href="all-classifieds.html">Broken Arrow </a></li>
-						<li><a href="all-classifieds.html">Lawton </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Oregon  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html"> Portland </a></li>
-						<li><a href="all-classifieds.html"> Eugene  </a></li>
-						<li><a href="all-classifieds.html"> Salem  </a></li>
-						<li><a href="all-classifieds.html"> Gresham  </a></li>
-						<li><a href="all-classifieds.html"> Hillsboro  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Pennsylvania  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Philadelphia  </a></li>
-						<li><a href="all-classifieds.html">Pittsburgh   </a></li>
-						<li><a href="all-classifieds.html">Allentown   </a></li>
-						<li><a href="all-classifieds.html">Erie   </a></li>
-						<li><a href="all-classifieds.html">Reading   </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="region-block">
-			<div class="container">
-				<div class="state col-md-3">
-					<h3>Rhode Island  </h3>
-				</div>
-				<div class="sun-regions col-md-9">
-					<ul>
-						<li><a href="all-classifieds.html">Providence  </a></li>
-						<li><a href="all-classifieds.html">Warwick   </a></li>
-						<li><a href="all-classifieds.html">Cranston   </a></li>
-						<li><a href="all-classifieds.html">Pawtucket   </a></li>
-						<li><a href="all-classifieds.html">East Providence  </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+		
 		<div class="region-block">
 			<div class="container">
 				<div class="state col-md-3">
@@ -938,37 +451,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <jsp:include page="footer1.jsp"></jsp:include>
         <!--footer section end-->
 </body>
-		<!-- Navigation-JavaScript -->
-			<script src="js/classie.js"></script>
-			<script src="js/main.js"></script>
-		<!-- //Navigation-JavaScript -->
-		<!-- here stars scrolling icon -->
-			<script type="text/javascript">
-				$(document).ready(function() {
-					/*
-						var defaults = {
-						containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear' 
-						};
-					*/
-										
-					$().UItoTop({ easingType: 'easeOutQuart' });
-										
-					});
-			</script>
-			<!-- start-smoth-scrolling -->
-			<script type="text/javascript" src="js/move-top.js"></script>
-			<script type="text/javascript" src="js/easing.js"></script>
-			<script type="text/javascript">
-				jQuery(document).ready(function($) {
-					$(".scroll").click(function(event){		
-						event.preventDefault();
-						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-					});
-				});
-			</script>
-			<!-- start-smoth-scrolling -->
-		<!-- //here ends scrolling icon -->
 </html>

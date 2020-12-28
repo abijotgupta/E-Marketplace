@@ -3,9 +3,12 @@
 <%@page import="com.dao.UserDaoImpl"%>
 <html>
 <head>
-	<title></title>
+	<title>Redirecting to Payment..............</title>
 </head>
 <body>
+
+<jsp:include page="userHeader.jsp"></jsp:include>
+
 <%@page import="com.paytm.pg.merchant.CheckSumServiceHelper" %>
 <%@page import="java.util.*" %>
 
@@ -157,5 +160,9 @@ session.setAttribute("location",location);
 	outputHtml.append("</html>");
 	out.println(outputHtml);
 	%>
+	
+	
+<jsp:include page="userHeader.jsp"></jsp:include>
+	
 	</body>
 	</html>
