@@ -5,6 +5,7 @@
     <html lang="en">
     <head>
     <title>Products</title>
+    <link rel="icon" href="images/logo original.jpg" type="image/jpg">
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,9 +61,9 @@
 
   <%
   
-   out.println(userName+"----------------------------------"+password+"-----------------------------------");
-   out.println(userName+"----------------------------------"+password+"-----------------------------------");
-   out.println(userName+"----------------------------------"+password+"-----------------------------------");
+//    out.println(userName+"----------------------------------"+password+"-----------------------------------");
+//    out.println(userName+"----------------------------------"+password+"-----------------------------------");
+//    out.println(userName+"----------------------------------"+password+"-----------------------------------");
   
   	ProductDaoImpl prodDao = new ProductDaoImpl(); 
   	List<ProductBean> products = new ArrayList<ProductBean>();
@@ -89,9 +90,9 @@
   <div class="col-sm-4">
     <div class="thumbnail">
       <img src="./img?id=<%=product.getProdId() %>" alt="Product" style="height:200px; max-width:200px; max-width:300px;">
-      <p class="productname"><%=product.getProdTitle() %> ( <%=product.getProdId() %> ) </p>
+      <p class="productname"><%=product.getProdTitle() %></p>
       <p class="productinfo"><%=product.getProdSlug() %></p>
-      <p class="priceProduct">Rs <%=product.getProdPrice() %> </p>
+      <p class="priceProduct">&#8377 <%=product.getProdPrice() %> </p>
       
        <form method="post"> 
         <button type="submit" method="post" formaction="<%=addToCartUrl%>">Add to Cart</button> 

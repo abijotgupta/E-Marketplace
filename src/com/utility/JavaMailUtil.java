@@ -34,12 +34,12 @@ public class JavaMailUtil {
 		ResultSet rs = null;
 		
 		try {
-			ps = con.prepareStatement("select * from accounts");
+			ps = con.prepareStatement("select * from emailaccount");
 			
 			rs = ps.executeQuery();
 			if(rs.next()) {
 			String emailId = rs.getString("email");
-			String passWord = rs.getString("password");
+			String passWord = rs.getString("passwordHash");
 			
 			properties.put("mail.user", emailId);
 			properties.put("mail.password", passWord);
@@ -107,12 +107,12 @@ public class JavaMailUtil {
 		ResultSet rs = null;
 		
 		try {
-			ps = con.prepareStatement("select * from admin");
+			ps = con.prepareStatement("select * from emailaccount");
 			
 			rs = ps.executeQuery();
 			if(rs.next()) {
-			String emailId = rs.getString("emailId");
-			String passWord = rs.getString("password");
+			String emailId = rs.getString("email");
+			String passWord = rs.getString("passwordHash");
 			
 			properties.put("mail.user", emailId);
 			properties.put("mail.password", passWord);

@@ -164,12 +164,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 				
 					<li class="dropdown head-dpdn">
-						<a href="signin1.jsp" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i><%userInfo.getName(); %></a>
+						<a href="signin1.jsp" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i><%=userInfo.getName() %></a>
 					</li>
 		
 				
 					<li class="dropdown head-dpdn">
-						<a href="cartDetails.jsp"><i class="fa fa-question-circle" aria-hidden="true"></i>Cart</a>
+						<a href="cartDetails.jsp"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a>
 					</li>
 					
 					<li class="dropdown head-dpdn">

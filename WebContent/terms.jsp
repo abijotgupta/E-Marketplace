@@ -7,6 +7,8 @@
 <html lang="en">
 <head>
 <title>Terms & Conditions</title>
+<link rel="icon" href="images/logo original.jpg" type="image/jpg">
+
 <link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap-CSS -->
 <link rel="stylesheet" href="css/bootstrap-select.css"><!-- bootstrap-select-CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->

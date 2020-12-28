@@ -6,6 +6,7 @@
 <html lang="en">
 <head>
 <title>Feedback</title>
+ <link rel="icon" href="images/logo original.jpg" type="image/jpg">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-select.css">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -72,7 +73,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h2 class="w3-head">Feedback</h2>
 			<div class="feed-back">
 				<h3>Tell us what you think of us</h3>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 				<div class="feed-back-form">
 					<form>
 					<span>User Details</span>

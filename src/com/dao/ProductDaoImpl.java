@@ -329,13 +329,6 @@ public class ProductDaoImpl implements ProductDao{
 			return status;
 		}
 		
-		/*System.out.println("pId: "+updatedProduct.getProdId());
-		System.out.println("pName: "+updatedProduct.getProdName());
-		System.out.println("pType: "+updatedProduct.getProdType());
-		System.out.println("pInfo: "+updatedProduct.getProdInfo());
-		System.out.println("pPrice: "+updatedProduct.getProdPrice());
-		System.out.println("pQuantity: "+updatedProduct.getProdQuantity());*/
-		
 		int prevQuantity = new ProductDaoImpl().getProductQuantity(prevProductId);
 		Connection con = DBUtil.provideConnection();
 		
@@ -343,15 +336,18 @@ public class ProductDaoImpl implements ProductDao{
 		
 		try {
 			
-			ps = con.prepareStatement("update product set title=?, summary=?, price=?, discount=?, quantity=?  where id=?");
+			ps = con.prepareStatement("update product set title=?, metaTitle=?, slug=?, summary=?, price=?, discount=?, quantity=?, shop=? where id=?");
 			
 			
 			ps.setString(1, updatedProduct.getProdTitle());
-			ps.setString(2, updatedProduct.getProdSummary());
-			ps.setDouble(3, updatedProduct.getProdPrice());
-			ps.setInt(4, updatedProduct.getProdDiscount());
-			ps.setInt(5, updatedProduct.getProdQuantity());
-			ps.setString(6, prevProductId);
+			ps.setString(2, updatedProduct.getProdmetaTitle());
+			ps.setString(3, updatedProduct.getProdSlug());
+			ps.setString(4, updatedProduct.getProdSummary());
+			ps.setDouble(5, updatedProduct.getProdPrice());
+			ps.setInt(6, updatedProduct.getProdDiscount());
+			ps.setInt(7, updatedProduct.getProdQuantity());
+			ps.setString(8, updatedProduct.getProdShop());
+			ps.setString(9, prevProductId);
 			
 			
 			int k = ps.executeUpdate();

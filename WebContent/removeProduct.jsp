@@ -5,6 +5,8 @@
     <html lang="en">
     <head>
     <title>Remove Products</title>
+    <link rel="icon" href="images/logo original.jpg" type="image/jpg">
+    
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -6,6 +6,8 @@
 <html lang="en">
 <head>
 <title>How It Works</title>
+ <link rel="icon" href="images/logo original.jpg" type="image/jpg">
+    
 <link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap-CSS -->
 <link rel="stylesheet" href="css/bootstrap-select.css"><!-- bootstrap-select-CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->
@@ -77,27 +79,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="work-section-grids text-center">
 						<div class="col-md-3 work-section-grid">
-							<i class="fa fa-pencil-square-o"></i>
-							<h4>Post an Ad</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-							<span class="arrow1"><img src="images/arrow1.png" alt="" /></span>
-						</div>
-						<div class="col-md-3 work-section-grid">
 							<i class="fa fa-eye"></i>
 							<h4>Find an item</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
 							<span class="arrow2"><img src="images/arrow2.png" alt="" /></span>
 						</div>
 						<div class="col-md-3 work-section-grid">
 							<i class="fa fa-phone"></i>
-							<h4>contact the seller</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<h4>Place the Order</h4>
 							<span class="arrow1"><img src="images/arrow1.png" alt="" /></span>
 						</div>
 						<div class="col-md-3 work-section-grid">
 							<i class="fa fa-money"></i>
-							<h4>make transactions</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<h4>Make Transactions</h4>
 						</div>
 						<div class="clearfix"></div>
 						<a class="work" href="Postad.html">Get start Now</a>

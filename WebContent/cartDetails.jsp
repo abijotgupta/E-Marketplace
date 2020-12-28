@@ -8,6 +8,7 @@
 <html>
 <head>
 <title>Shopping Cart</title>
+  <link rel="icon" href="images/logo original.jpg" type="image/jpg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -67,7 +68,7 @@
 
 
 
-<jsp:include page="header1.jsp"></jsp:include>
+<jsp:include page="userHeader.jsp"></jsp:include>
 
 	
 <!-- Start of Product Items List -->

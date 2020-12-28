@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin Sign In</title>
+     <link rel="icon" href="images/logo original.jpg" type="image/jpg">
+
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -28,7 +30,7 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="images/login/signin-image.jpg" alt="sing up image"></figure>
                         <a href="signup1.jsp" class="signup-image-link">Create an admin account</a>
                     </div>
 

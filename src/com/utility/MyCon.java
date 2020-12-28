@@ -10,7 +10,7 @@ public class MyCon {
 	public static  Connection dbcon() throws ClassNotFoundException, SQLException {
 		
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/merketplace","root","abijot125");
+		Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/marketplace","root","xxxxxxx");
 	
 	return con;
 
