@@ -12,31 +12,22 @@ import com.dao.ProductDaoImpl;
 public class RemoveProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-    public RemoveProductServlet() {
-        super();
+    	public RemoveProductServlet() {
+        	super();
       
-    }
-
-	
+    	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		ProductDaoImpl prodDao = new ProductDaoImpl(); 
-	  
-		String status = "Product Removal Failed!";
+	  	String status = "Product Removal Failed!";
 		String prodId = request.getParameter("prodid");
 		status = prodDao.removeProduct(prodId);
-		
 		RequestDispatcher rd = request.getRequestDispatcher("removeProduct.jsp");
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
 		rd.include(request, response);
-		pw.println("<script>document.getElementById('message').innerHTML='"+status+"'</script>");
-		
+		pw.println("<script>document.getElementById('message').innerHTML='"+status+"'</script>");	
 	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
 		doGet(request, response);
 	}
-
 }
