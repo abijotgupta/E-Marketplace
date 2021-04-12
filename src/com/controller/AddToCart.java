@@ -8,21 +8,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import com.bean.DemandBean;
 import com.bean.ProductBean;
 import com.dao.CartDaoImpl;
 import com.dao.DemandDaoImpl;
 import com.dao.ProductDaoImpl;
 
-
 public class AddToCart extends HttpServlet {
 	private static final long serialVersionUID = 1L;
       
-    public AddToCart() {
-        super();
-    }
-
+    	public AddToCart() {
+        	super();
+   	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		HttpSession session = request.getSession();
@@ -33,36 +30,15 @@ public class AddToCart extends HttpServlet {
 	
 			response.sendRedirect("signin1.jsp");
 		}	
-		
-		
-		//login Check Successful
-		
 		String userId = userName;
 		String prodId = request.getParameter("id");		
 		int pQty = Integer.parseInt(request.getParameter("quantity")); //1
-		
-//		
-//		System.out.println(prodId);
-//		System.out.println("-------------------------------------");
-//		System.out.println(pQty);
-//		
-		
 		CartDaoImpl cart = new CartDaoImpl();
 		ProductDaoImpl productDao = new  ProductDaoImpl();
 		ProductBean product= productDao.getProductDetails(prodId);
-		
 		int availableQty = product.getProdQuantity();
-		//System.out.println(availableQty+"-------------------------------");
-		
 		int cartQty = 0;//cart.getProductCount(userId,prodId);
-		//System.out.println(cartQty+"-------------------------------");
-		
-		
 		pQty += cartQty;
-		//System.out.println(pQty+"------dsfgbnhmjnfbvc-------------------------");
-		
-		
-		
 		PrintWriter pw = response.getWriter();
 		response.setContentType("text/html");
 		
@@ -95,14 +71,11 @@ public class AddToCart extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			rd.include(request, response);
 			pw.println("<script>document.getElementById('message').innerHTML='"+status+"'</script>");
-		}
-		
-		
+		}	
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		doGet(request, response);
 	}
-
 }
