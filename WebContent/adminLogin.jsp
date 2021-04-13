@@ -24,11 +24,8 @@
                             <figure><img src="images/login/signin-image.jpg" alt="sing up image"></figure>
                             <a href="signup1.jsp" class="signup-image-link">Create an admin account</a>
                         </div>
-
                         <div class="signin-form">
                             <h2 class="form-title">ADMIN SIGN IN</h2>
-
-
                             <form action="${pageContext.request.contextPath}/login" method="POST" class="register-form" id="login-form">
                                 <div class="form-group">
                                     <label for="userName"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -58,9 +55,7 @@
                     </div>
                 </div>
             </section>
-
         </div>
-
         <!-- JS -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="js/main.js"></script>
