@@ -9,10 +9,8 @@
    	<link rel="icon" href="images/logo original.jpg" type="image/jpg">
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
    	<link rel="stylesheet" href="css/signINsignUPstyle.css">
-    </head>
-    
+    </head> 
     <body>
-
     <jsp:include page="header1.jsp"></jsp:include>
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
