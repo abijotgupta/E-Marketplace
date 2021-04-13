@@ -9,50 +9,32 @@ import java.util.ResourceBundle;
 
 public class DBUtil {
 	private static Connection  conn;
-	
 	static ResourceBundle rb = ResourceBundle.getBundle("com.utility.database");
-	
-	public  DBUtil() {}
-	
+	public  DBUtil() {}	
 	public static Connection provideConnection() {
-		
-		
 		try {
 			if(conn== null || conn.isClosed()) {
-				
 				try {
-					Class.forName(rb.getString("driverName"));
-					
+					Class.forName(rb.getString("driverName"));	
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				
 				conn = DriverManager.getConnection(rb.getString("connectionString"),rb.getString("username"),rb.getString("password"));
-				
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		
-		
-		
+		}	
 		return conn;
 	}
-	
-	
-	
 	public static void closeConnection(Connection con) {
 		try {
-			if(con!=null && !con.isClosed()) {
-				
+			if(con!=null && !con.isClosed()) {	
 				con.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	
 	public static void closeConnection(ResultSet rs) {
 		try {
 			if(rs!=null && !rs.isClosed()) {
@@ -66,8 +48,6 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 	}
-	
-	
 	public static void closeConnection(PreparedStatement ps) {
 		try {
 			if(ps != null &&  !ps.isClosed()) {
