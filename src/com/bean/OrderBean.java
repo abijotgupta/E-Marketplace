@@ -6,7 +6,6 @@ public class OrderBean implements Serializable{
 
 	
 	private static final long serialVersionUID = 1L;
-	
 	private String transactionId;
 	private String productId;
 	private int quantity;
@@ -25,7 +24,6 @@ public class OrderBean implements Serializable{
 		this.amount = amount;
 		this.shipped = 0;
 	}
-	
 	public OrderBean(String transactionId, String productId, int quantity, Double amount,int shipped) {
 		super();
 		this.transactionId = transactionId;
@@ -34,8 +32,6 @@ public class OrderBean implements Serializable{
 		this.amount = amount;
 		this.shipped = shipped;
 	}
-
-	
 	public String getTransactionId() {
 		return transactionId;
 	}
@@ -67,8 +63,5 @@ public class OrderBean implements Serializable{
 
 	public void setShipped(int shipped) {
 		this.shipped = shipped;
-	}
-	
-	
-	
+	}	
 }
