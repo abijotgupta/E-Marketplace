@@ -4,16 +4,11 @@ public class AdminBean {
 
 	private String name;
 	private Long number;
-    private String dob;
-    private String userName;
-    private String password;
-    
-    
-    
-	public AdminBean() {
+    	private String dob;
+    	private String userName;
+    	private String password;
+    	public AdminBean() {
 	}
-
-
 	public AdminBean(String name, Long number, String dob, String userName, String password) {
 		super();
 		this.name = name;
@@ -22,8 +17,6 @@ public class AdminBean {
 		this.userName = userName;
 		this.password = password;
 	}
-	
-	
 	public String getName() {
 		return name;
 	}
@@ -53,9 +46,5 @@ public class AdminBean {
 	}
 	public void setPassword(String password) {
 		this.password = password;
-	}
-    
-    
-    
-	
+	}	
 }
