@@ -1,7 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -19,8 +16,6 @@
     <body>
     
     <jsp:include page="header1.jsp"></jsp:include>
-    
-    
         <div class="main">
             <!-- Sign up form -->
             <section class="signup">
@@ -29,60 +24,43 @@
                         <div class="signup-form">
                             <h2 class="form-title">Add Product</h2>
                             <form action="${pageContext.request.contextPath}/addProduct" method="POST" enctype="multipart/form-data" class="register-form" id="register-form">
-                            
                                 <div class="form-group">
                                     <label for="title"><i class="zmdi zmdi-view-headline"></i></label>
                                     <input type="text" name="title" id="name" placeholder="Product Title"/>
                                 </div>
-                                
-                                
                                 <div class="form-group">
                                     <label for="metaTitle"><i class="zmdi zmdi-assignment-o"></i></label>
                                     <input type="text" name="metaTitle" id="name" placeholder="Product MetaTitle"/>
                                 </div>
-                                
-                                
-                                 <div class="form-group">
+                                <div class="form-group">
                                     <label for="slug"><i class="zmdi zmdi-view-compact"></i></label>
                                     <input type="text" name="slug" id="name" placeholder="Product Slug"/>
                                 </div>
-                                
-                                 <div class="form-group">
+                                <div class="form-group">
                                     <label for="summary"><i class="zmdi-file-text"></i></label>
                                     <input type="text" name="summary" id="name" placeholder="Product Summary"/>
                                 </div>
-                                
-                                
-                                 <div class="form-group">
+                                <div class="form-group">
                                     <label for="price"><i class="zmdi zmdi-money"></i></label>
                                     <input type="number" name="price" id="number" placeholder="Enter Price"/>
                                 </div>
-                                
                                 <div class="form-group">
                                     <label for="discount"><i class="zmdi zmdi-money-off"></i></label>
                                     <input type="number" name="discount" id="number" placeholder="Enter Discount"/>
                                 </div>
-                                
                                 <div class="form-group">
                                     <label for="quantity"><i class="zmdi zmdi-n-1-square"></i></label>
                                     <input type="number" name="quantity" id="number" placeholder="Enter Quantity"/>
                                 </div>
-                                
-                         
-                         		<div class="form-group">
+                                <div class="form-group">
                                     <label for="shop"><i class="zmdi zmdi-pin-drop"></i></label>
                                     <input type="text" name="shop" id="name" placeholder="Enter Product Shop"/>
                                 </div>
-                                
-                                
                                  <div class="form-group">
                                     <label for="img"><i class="zmdi zmdi-attachment-alt"></i></label>
                                     <input type="file" name="img" id="name"/>
                                 </div>
-                               
-                               
-                               
-                                <div class="form-group">
+                               <div class="form-group">
                                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                     <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                                 </div>
@@ -98,14 +76,9 @@
                 </div>
             </section>
         </div>
-    
         <!-- JS -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        
-        
-        
-        
         <jsp:include page="footer1.jsp"></jsp:include>
         
     </body>
