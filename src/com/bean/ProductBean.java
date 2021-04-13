@@ -4,12 +4,8 @@ import java.io.InputStream;
 import java.io.Serializable;
 
 public class ProductBean implements Serializable{
-
 	private static final long serialVersionUID = 1L;
-
-
 	public ProductBean() {}
-	
 	private String prodId;
 	private String prodTitle;
 	private String prodmetaTitle;
@@ -20,11 +16,9 @@ public class ProductBean implements Serializable{
 	private int prodQuantity;
 	private String prodShop;
 	private InputStream prodImage;
-	
-	
+
 	public ProductBean(String prodId, String prodTitle, String prodmetaTitle, String prodSlug, String prodSummary, double prodPrice, int prodDiscount, 
-			int prodQuantity, String prodShop, InputStream prodImage)
-	{
+			int prodQuantity, String prodShop, InputStream prodImage) {
 		super();
 		this.prodId = prodId;
 		this.prodTitle = prodTitle;
@@ -37,22 +31,18 @@ public class ProductBean implements Serializable{
 		this.prodShop = prodShop;
 		this.prodImage = prodImage;
 	}
-
-
+	
 	public String getProdId() {
 		return prodId;
 	}
-
 
 	public void setProdId(String prodId) {
 		this.prodId = prodId;
 	}
 
-
 	public String getProdTitle() {
 		return prodTitle;
 	}
-
 
 	public void setProdTitle(String prodTitle) {
 		this.prodTitle = prodTitle;
@@ -63,26 +53,21 @@ public class ProductBean implements Serializable{
 		return prodmetaTitle;
 	}
 
-
 	public void setProdmetaTitle(String prodmetaTitle) {
 		this.prodmetaTitle = prodmetaTitle;
 	}
-
 
 	public String getProdSlug() {
 		return prodSlug;
 	}
 
-
 	public void setProdSlug(String prodSlug) {
 		this.prodSlug = prodSlug;
 	}
 
-	
 	public String getProdSummary() {
 		return prodSummary;
 	}
-
 
 	public void setProdSummary(String prodSummary) {
 		this.prodSummary = prodSummary;
@@ -92,11 +77,9 @@ public class ProductBean implements Serializable{
 		return prodPrice;
 	}
 
-
 	public void setProdPrice(double prodPrice) {
 		this.prodPrice = prodPrice;
 	}
-
 
 	public int getProdDiscount() {
 		return prodDiscount;
@@ -107,34 +90,27 @@ public class ProductBean implements Serializable{
 		this.prodDiscount = prodDiscount;
 	}
 
-
 	public int getProdQuantity() {
 		return prodQuantity;
 	}
-
 
 	public void setProdQuantity(int prodQuantity) {
 		this.prodQuantity = prodQuantity;
 	}
 
-
 	public String getProdShop() {
 		return prodShop;
 	}
-
 
 	public void setProdShop(String prodShop) {
 		this.prodShop = prodShop;
 	}
 
-
 	public InputStream getProdImage() {
 		return prodImage;
 	}
 
-
 	public void setProdImage(InputStream prodImage) {
 		this.prodImage = prodImage;
 	}
-	
 }
