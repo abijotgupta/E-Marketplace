@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMessage;
 public class JavaMailUtil {
 	public  static void sendMail(String recipientMailId) throws MessagingException {
 		
-		System.out.println("Preparing to send Mail");
+		//System.out.println("Preparing to send Mail");
 		Properties properties = new Properties();
 		String host = "smtp.gmail.com";
 		properties.put("mail.smtp.host", host);
@@ -27,72 +27,50 @@ public class JavaMailUtil {
 		properties.put("mail.smtp.auth","true");
 		properties.put("mail.smtp.starttls.enable", "true");
 		properties.put("mail.smtp.port", "587");
-		
+	
 		Connection con = DBUtil.provideConnection();
-		
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		
 		try {
 			ps = con.prepareStatement("select * from emailaccount");
-			
 			rs = ps.executeQuery();
 			if(rs.next()) {
 			String emailId = rs.getString("email");
 			String passWord = rs.getString("passwordHash");
-			
 			properties.put("mail.user", emailId);
 			properties.put("mail.password", passWord);
-			
 			Session session = Session.getInstance(properties, new Authenticator() {
-
 				@Override
 				protected PasswordAuthentication getPasswordAuthentication() {
 					return new PasswordAuthentication(emailId,passWord);
-				}
-				
+				}	
 			});
 			
 			Message message = prepareMessage(session,emailId,recipientMailId);
-			
 			Transport.send(message);
-			
-			System.out.println("Message Sent Successfully!");
+			//System.out.println("Message Sent Successfully!");
 			}
 		} catch (SQLException e) {
-			System.out.println("Message Sending Failed\n Error: "+e);
+			//System.out.println("Message Sending Failed\n Error: "+e);
 			e.printStackTrace();
-		}
-		
-		
-		
+		}	
 	}
-	
-	
-	private static Message prepareMessage(Session session,String myAccountEmail, String recipientEmail) {
-		
+	private static Message prepareMessage(Session session,String myAccountEmail, String recipientEmail) {	
 		try {
-			
 			Message message = new MimeMessage(session);
-			
 			message.setFrom(new InternetAddress(myAccountEmail));
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
 			message.setSubject("Welcome to Apni Dukaan");
 			message.setText("Hey! "+recipientEmail + ", Thanks  for Signing Up with us!");
-			return message;
-			
+			return message;	
 		}
 		catch(Exception exception) {
 			Logger.getLogger(JavaMailUtil.class.getName()).log(Level.SEVERE,null,exception);
 		}
 		return null;
-		
 	}
-	
-	
 	protected static void sendMail(String recipient,String subject, String htmlTextMessage) throws MessagingException {
-		
-		System.out.println("Preparing to send Mail");
+		//System.out.println("Preparing to send Mail");
 		Properties properties = new Properties();
 		String host = "smtp.gmail.com";
 		properties.put("mail.smtp.host", host);
@@ -100,63 +78,46 @@ public class JavaMailUtil {
 		properties.put("mail.smtp.auth","true");
 		properties.put("mail.smtp.starttls.enable", "true");
 		properties.put("mail.smtp.port", "587");
-		
-		Connection con = DBUtil.provideConnection();
-		
+		Connection con = DBUtil.provideConnection();	
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		
 		try {
 			ps = con.prepareStatement("select * from emailaccount");
-			
 			rs = ps.executeQuery();
 			if(rs.next()) {
 			String emailId = rs.getString("email");
 			String passWord = rs.getString("passwordHash");
-			
 			properties.put("mail.user", emailId);
 			properties.put("mail.password", passWord);
-			
 			Session session = Session.getInstance(properties, new Authenticator() {
-
 				@Override
 				protected PasswordAuthentication getPasswordAuthentication() {
 					return new PasswordAuthentication(emailId,passWord);
-				}
-				
+				}	
 			});
 			
 			Message message = prepareMessage(session,emailId,recipient,subject,htmlTextMessage);
-			
 			Transport.send(message);
-			
-			System.out.println("Message Sent Successfully!");
+			//System.out.println("Message Sent Successfully!");
 			}
 		} catch (SQLException e) {
 			System.out.println("Message Sending Failed\n Error: "+e);
 			e.printStackTrace();
-		}
-		
-		
+		}	
 	}
 	
 	private static Message prepareMessage(Session session,String myAccountEmail, String recipientEmail, String subject , String htmlTextMessage) {
-		
 		try {
-			
 			Message message = new MimeMessage(session);
-			
 			message.setFrom(new InternetAddress(myAccountEmail));
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
 			message.setSubject(subject);
 			message.setContent(htmlTextMessage, "text/html");
 			return message;
-			
 		}
 		catch(Exception exception) {
 			Logger.getLogger(JavaMailUtil.class.getName()).log(Level.SEVERE,null,exception);
 		}
 		return null;
-		
 	}
 }
