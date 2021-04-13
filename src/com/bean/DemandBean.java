@@ -12,7 +12,7 @@ public class DemandBean implements Serializable{
 	public DemandBean() {
 		super();
 	}
-
+	
 	public DemandBean(String userName, String prodId, int demandQty) {
 		super();
 		this.userName = userName;
@@ -43,7 +43,4 @@ public class DemandBean implements Serializable{
 	public void setDemandQty(int demandQty) {
 		this.demandQty = demandQty;
 	}
-	
-	
-	
 }
