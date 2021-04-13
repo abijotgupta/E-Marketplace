@@ -57,7 +57,6 @@ public class MailMessage {
 				"    " + 
 				"  </body>" + 
 				"</html>";
-		
 		try {
 			JavaMailUtil.sendMail(recipient,subject,htmlTextMessage);
 		}
@@ -95,14 +94,11 @@ public class MailMessage {
 				"    " + 
 				"  </body>" + 
 				"</html>";
-		
 		try {
 			JavaMailUtil.sendMail(recipient,subject,htmlTextMessage);
 		}
 		catch(MessagingException e) {
 			e.printStackTrace();
 		}
-	}
-	
-	
+	}	
 }
