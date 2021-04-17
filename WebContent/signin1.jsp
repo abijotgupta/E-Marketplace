@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,24 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign In</title>
     <link rel="icon" href="images/logo original.jpg" type="image/jpg">
-    
-
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
     <!-- Main css -->
      <link rel="stylesheet" href="css/signINsignUPstyle.css">
 </head>
 <body>
-
-
-
 <jsp:include page="header1.jsp"></jsp:include>
-
     <div class="main">
-
-
-        <!-- Sing in  Form -->
+        <!-- Sign in  Form -->
         <section class="sign-in">
             <div class="container">
                 <div class="signin-content">
@@ -36,11 +25,8 @@
                         <br><br>
                         <a href="signup1.jsp" class="signup-image-link">Create an account</a>
                     </div>
-
                     <div class="signin-form">
                         <h2 class="form-title">Sign In</h2>
-                        
-                        
                         <form action="${pageContext.request.contextPath}/login" method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="userName"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -70,18 +56,10 @@
                 </div>
             </div>
         </section>
-
     </div>
-
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    
-    
-    
-    
-    
-    <jsp:include page="footer1.jsp"></jsp:include>
-    
+    <jsp:include page="footer1.jsp"></jsp:include> 
 </body>
 </html>
