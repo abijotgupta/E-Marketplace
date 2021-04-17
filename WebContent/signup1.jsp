@@ -1,8 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-
-
-    <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -10,20 +7,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Sign Up</title>
         <link rel="icon" href="images/logo original.jpg" type="image/jpg">
-        
-    
         <!-- Font Icon -->
         <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-    
         <!-- Main css -->
        <link rel="stylesheet" href="css/signINsignUPstyle.css">
     </head>
-    <body>
-    
+    <body> 
     <jsp:include page="header1.jsp"></jsp:include>
-    
-    
-        <div class="main">
+       <div class="main">
             <!-- Sign up form -->
             <section class="signup">
                 <div class="container">
@@ -31,25 +22,18 @@
                         <div class="signup-form">
                             <h2 class="form-title">Sign up</h2>
                             <form action="${pageContext.request.contextPath}/register" method="POST" class="register-form" id="register-form">
-                            
                                 <div class="form-group">
                                     <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                     <input type="text" name="name" id="name" placeholder="Your Name"/>
                                 </div>
-                                
-                                
-                                 <div class="form-group">
+                                <div class="form-group">
                                     <label for="number"><i class="zmdi zmdi-phone"></i></label>
                                     <input type="number" name="number" id="number" placeholder="Your Mobile Number"/>
                                 </div>
-                                
-                                
-                                 <div class="form-group">
+                                <div class="form-group">
                                     <label for="dob"><i class="zmdi zmdi-calendar"></i></label>
                                     <input type="date" name="dob" id="dob"/>
                                 </div>
-                                
-                                
                                 <div class="form-group">
                                     <label for="email"><i class="zmdi zmdi-email"></i></label>
                                     <input type="email" name="email" id="email" placeholder="Your Email"/>
@@ -79,15 +63,9 @@
                 </div>
             </section>
         </div>
-    
         <!-- JS -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        
-        
-        
-        
         <jsp:include page="footer1.jsp"></jsp:include>
-        
     </body>
-    </html>
+</html>
